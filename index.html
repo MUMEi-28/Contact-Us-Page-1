@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <style>
+        body {
+            background-color: rgba(48, 68, 99, 0.527);
+            display: flex;
+            justify-content: center;
+        }
+        .contact-container {
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 20px;
+            background-color: rgb(51, 54, 104);
+            box-shadow: 0px 4px 8px rgb(58, 3, 110);
+        }
+        form {
+            margin-top: 10px;
+        }
+        .form-group {
+            margin-bottom: 55px;
+        }
+        .form-group label {
+            display: block;
+            margin-top: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(206, 204, 238);
+        }
+        .form-group input, .form-group textarea {
+            width: 95%;
+            padding: 10px;
+            border: 10px rgb(255, 14, 54);
+            border-radius: 4px;
+            background-color: rgb(206, 231, 241);
+        }
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 10px rgb(255, 14, 54);
+            border-radius: 4px;
+            background-color: rgb(206, 231, 241);
+        }
+        .submitbtn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .submitbtn input {
+            color: rgb(183, 215, 243);
+            width: 40%;
+            background-color: rgb(54, 49, 206);
+            border-radius: 20px;
+        }
+        .form-group label{
+            color: rgb(200, 197, 235);
+        }
+        .form-group .updateinboxs input[type="checkbox"] {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form action="">
+            <div class="form-group">
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required>
+                  
+                    <label for="email">Email:</label>
+                    <input type="email" name="email">
+                   
+                    <label for="number">Number:</label>
+                    <input type="number" name="number">
+                </form>
+               
+                <form action="">
+                    <label for="subject">Subject:</label>
+                    <select name="dropdown" id="">
+                        <option value="cc6">CC6</option>
+                        <option value="atfl">ATFL</option>
+                        <option value="coal">COAL</option>
+                        <option value="webprog">WEBPROG</option>
+                    </select>
+                  
+                    <label for="preferred">preferred contact method</label>
+                    
+                    <label for="email">email</label>
+                    <input type="radio" name="email">
+                    
+                    <label for="number">number</label>
+                    <input type="radio" name="number">
+
+                    <div class="updateinboxs">
+                        <label for="updates">Get Updates From Us?</label>
+                        
+                        <label for="updates">News Letter</label>
+                        <input type="checkbox">
+    
+                        <label for="updates">Promotions</label>
+                        <input type="checkbox">
+                    </div>
+                   
+                    
+                    <label for="updates">News Updates</label>
+                    <input type="checkbox">
+                    
+
+                </form>
+                
+                <form action="">
+                    <label for="message">message</label>
+                    <textarea name="message" rows="5" cols="25">enter message here...</textarea>
+                </form>
+                
+                <form action="" class="submitbtn">
+                    <input type="submit" name="submit" value="submit">
+                </form>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
